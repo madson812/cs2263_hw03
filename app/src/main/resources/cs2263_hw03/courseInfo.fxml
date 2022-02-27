@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
 
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cs2263_hw03.CoursesProcessor">
+   <TextField fx:id="courseName" layoutX="40.0" layoutY="95.0" onKeyPressed="#keyPressed"
+              promptText="Course Name"/>
+   <TextField fx:id="credits" layoutX="40.0" layoutY="139.0" onKeyPressed="#keyPressed"
+              promptText="Number of credits"/>
+   <TextField fx:id="courseNum" layoutX="40.0" layoutY="187.0" onKeyPressed="#keyPressed"
+              promptText="Course number"/>
+   <ComboBox fx:id="dept" layoutX="291.0" layoutY="95.0" onKeyPressed="#keyPressed" onMouseClicked="#deptClick" prefWidth="150.0"
+             promptText="Department" visibleRowCount="6">
+   <items>
+      <FXCollections fx:factory="observableArrayList">
+         <String fx:value="Computer Science" />
+         <String fx:value="Mathematics" />
+         <String fx:value="Chemistry" />
+         <String fx:value="Physics" />
+         <String fx:value="Biology" />
+         <String fx:value="Electrical Engineering" />
+      </FXCollections>
+   </items>
+   </ComboBox>
+   <Button  layoutX="331.0" layoutY="268.0" mnemonicParsing="false" onMouseClicked="#createCourse" prefHeight="53.0"
+           prefWidth="159.0" text="Create course"/>
 </AnchorPane>

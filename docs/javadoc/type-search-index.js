@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"cs2263_hw03","l":"App"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"cs2263_hw03","l":"App"},{"p":"cs2263_hw03","l":"Catalog"},{"p":"cs2263_hw03","l":"Course"},{"p":"cs2263_hw03","l":"CoursesProcessor"}];updateSearchResults();
