@@ -3,12 +3,43 @@
  */
 package cs2263_hw03;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+/**
+ * The main app of the application. This starts the javafx running.
+ *
+ * @author Grant Madson
+ */
+public class App extends Application {
+
+    /**
+     * The required start method for javafx. Doesn't work without it.
+     *
+     * @param stage
+     * @throws IOException
+     */
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("layout.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Course catalog");
+        stage.setScene(scene);
+        stage.show();
     }
 
+    /**
+     * The main method for the program. Calls Javafx.
+     *
+     * @param args
+     */
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        launch();
     }
 }
+
