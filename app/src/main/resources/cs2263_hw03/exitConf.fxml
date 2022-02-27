@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="193.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cs2263_hw03.CoursesProcessor">
+    <Text layoutX="105.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure you want to exit?"/>
+    <Button fx:id="yesExit" layoutX="68.0" layoutY="141.0" mnemonicParsing="false" onAction="#yesExit" prefHeight="25.0"
+            prefWidth="73.0" text="Yes"/>
+    <Button fx:id="noExit" layoutX="213.0" layoutY="141.0" mnemonicParsing="false" onAction="#noExit" prefHeight="25.0"
+            prefWidth="73.0" text="No"/>
+</AnchorPane>
